@@ -1,4 +1,5 @@
-vim.g.mapleader = ","
+vim.api.nvim_set_keymap("", "<Space>", "<Nop>", { noremap = true, silent = true })
+vim.g.mapleader = " "
 -- encoding
 -- vim.o.encofing = "utf-8"
 vim.scriptencoding = "utf-8"

@@ -4,6 +4,10 @@ vim.keymap.set('n', 'k', 'gk')
 vim.keymap.set('n', ';', ':')
 vim.keymap.set('n', ':', ';')
 
+-- 移動
+vim.keymap.set('n', '<S-l>', '$')
+vim.keymap.set('n', '<S-h>', '^')
+
 vim.keymap.set('n', '<leader>sv', '<C-w>v') -- ウィンドウを垂直方向に分割する
 vim.keymap.set('n', '<leader>sh', '<C-w>s') -- ウィンドウを水平に分割する
 vim.keymap.set('n', '<leader>se', '<C-w>=') -- ウィンドウの幅を等分にする
@@ -37,4 +41,6 @@ vim.keymap.set('n', '<leader>fh', '<cmd>Telescope help_tags<cr>', { noremap = tr
 vim.keymap.set('n', '<leader>ff', '<cmd>lua require("telescope.builtin").find_files()<cr>', { noremap = true, silent = true })
 vim.keymap.set('n', '<leader>fg', '<cmd>lua require("telescope.builtin").live_grep()<cr>', { noremap = true, silent = true })
 vim.keymap.set('n', '<leader>lr', '<cmd>Telescope lsp_references<CR>', { noremap = true, silent = true })
+
+vim.keymap.set('n', '<leader>j', '<Plug>(jumpcursor-jump)', { noremap = false, silent = true })
 
