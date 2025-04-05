@@ -40,7 +40,7 @@ return {
     "nvim-telescope/telescope-frecency.nvim",
     config = function()
       require("telescope").load_extension("frecency")
-      vim.api.nvim_set_keymap('n', '<C-f>', '<cmd>Telescope frecency<cr>', { noremap = true, silent = true })
+      vim.api.nvim_set_keymap('n', '<S-f>', '<cmd>Telescope frecency<cr>', { noremap = true, silent = true })
     end
   }
 }
