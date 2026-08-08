@@ -33,6 +33,7 @@ return {
           ['<CR>'] = cmp.mapping.confirm({ select = true }), -- Enterキーで選択を確定
         },
         sources = cmp.config.sources({
+          { name = 'copilot' },
           { name = 'nvim_lsp' },
           { name = 'luasnip' },
         }, {
