@@ -7,6 +7,7 @@ return {
   -- telescope.nvim
   {
     "nvim-telescope/telescope.nvim",
+    tag = "0.1.8",
     dependencies = { "airblade/vim-rooter" },
     config = function()
       local telescope = require('telescope')
@@ -38,6 +39,7 @@ return {
   -- telescope-frecency.nvim
   {
     "nvim-telescope/telescope-frecency.nvim",
+    version = "^1.0.0",
     config = function()
       require("telescope").load_extension("frecency")
       vim.api.nvim_set_keymap('n', '<S-f>', '<cmd>Telescope frecency<cr>', { noremap = true, silent = true })
